@@ -1,0 +1,162 @@
+/*هدر */
+div.header{
+    background-color: #200c5b;
+    display: flex;
+    padding: 20px 40px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+div.header a{
+color: white;
+padding-top: 15px;
+font-size: 25px;
+}
+div.header a:hover{
+color: rgb(95, 95, 95);
+cursor: pointer;/*وقتی موس میاد روش نشانگر شکل دست میشه*/
+}
+
+header{
+background-color:#140837 ;
+box-shadow: 50px 50px 50px rgba(255, 255, 255, 0.679);
+bottom: 0;
+}
+i{
+    color: white;
+    margin: 0px 0px 20px 30px;}
+    a{
+        text-decoration: none;
+    }
+/*هدر برای موبایل*/
+@media  screen and (max-width:768px) {
+    header{
+        background-color:#140837 ;
+        width: 100%;
+        box-shadow: 50px 50px 50px rgba(255, 255, 255, 0.679);
+        bottom: 0;
+        min-height: 100vh;/*ارتفاع حداقل برابر با کل صفحه*/ 
+        overflow: hidden;/*جلوگیری از اسکرول*/
+    }
+div.header{
+    flex-direction: column;/*آیتم ها زیر هم قرار بگیرند*/
+    text-align: center;
+    padding: 15px;
+    
+        }
+div.header a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+        }
+    }
+
+/* بدنه */
+div.bdmaqaleh{
+    font-size:20px ;
+    margin: 20px 30px 20px 30px; 
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+.slidmaqaleh{
+    display: flex;
+    overflow-x: auto;
+    gap: 49px;
+    padding: 20px;
+    scroll-snap-type:x mandatory;
+}
+.slide{
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align: start;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+  }
+  .slide img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .slide h3{
+    padding: 10px;
+    font-size: 16px;
+  }
+  .slidmaqaleh a{
+    text-decoration: none;
+    color:black ;
+    font-size: 20px;
+  }
+  .slidmaqaleh a:hover{
+    color: dimgray;
+    font-size:25px ;
+  }
+  
+
+/*فوتر */
+
+footer{
+    margin-top: 100px;/*فاصله از عنصر بالایی*/
+    background-color: #200c5b;
+    box-shadow: 0px -5px/*افست*/ 50px/*پخش شدگی*/ rgba(55, 54, 54, 0.5);/*سایه */
+    width: 100vw;/*عرض صفحه*/
+    height: 100px;/*ارتفاع*/
+    position:absolute;/*موقعیت فوتر*/
+    left: 0;/*فاصله از چپ*/
+    display: flex;
+    justify-content: center;/*محتوا از نظر عمودی وسط باشه*/
+    align-items: center;/*محتوا از نظر عمودی وسط باشه */
+    text-align: center;/*متن ها وسط چین شوند*/
+    padding: 20px;/*فاصله داخلی*/
+    white-space: nowrap;
+    overflow: hidden;/*اگر محتوایی از فوتر بیشتر شد پنهان بشه*/
+}
+
+footer a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+footer a:hover{
+    color: rgb(95, 95, 95);
+}
+i{
+    color: white;
+    margin: 0px 0px 20px 30px;
+}
+/*فوتر برای موبایل*/
+@media  screen and (max-width:768px){
+    footer{
+        margin-top: 100px;/*فاصله از عنصر بالایی*/
+        flex-direction: column;/*آیتم ها زیر هم قرار بگیرند*/
+        background-color: #200c5b;
+        box-shadow: 0px -5px/*افست*/ 50px/*پخش شدگی*/ rgba(55, 54, 54, 0.5);/*سایه */
+        width: 100%;/*عرض صفحه*/
+        height: auto;/*ارتفاع*/
+        position:absolute;/*موقعیت فوتر*/
+        left: 0;/*فاصله از چپ*/
+        display: flex;
+        justify-content: center;/*محتوا از نظر عمودی وسط باشه*/
+        align-items: center;/*محتوا از نظر عمودی وسط باشه */
+        text-align: center;/*متن ها وسط چین شوند*/
+        padding: 15px;/*فاصله داخلی*/
+        white-space: nowrap;
+        overflow: hidden;/*اگر محتوایی از فوتر بیشتر شد پنهان بشه*/
+    }
+    
+    footer a{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}

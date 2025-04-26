@@ -1,0 +1,84 @@
+/*هدر */
+div.header{
+    background-color: #200c5b;
+    display: flex;
+    padding: 20px 40px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+div.header a{
+color: white;
+padding-top: 15px;
+font-size: 25px;
+}
+div.header a:hover{
+color: rgb(95, 95, 95);
+cursor: pointer;/*وقتی موس میاد روش نشانگر شکل دست میشه*/
+}
+
+header{
+background-color:#140837 ;
+box-shadow: 50px 50px 50px rgba(255, 255, 255, 0.679);
+bottom: 0;
+}
+i{
+    color: white;
+    margin: 0px 0px 20px 30px;}
+a{
+    text-decoration: none;
+}
+
+/*بدنه*/
+p{
+    font-size: 20px;
+    margin: 20px 100px 20px 100px;
+}
+*{
+    box-sizing: border-box;
+}
+.slides{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.slides img{
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+@media (max-width: 600px){
+.slides img{
+width: 100%;}
+}
+
+/*فوتر */
+
+footer{
+    margin-top: 100px;/*فاصله از عنصر بالایی*/
+    bottom: 0;
+    background-color: #200c5b;
+    box-shadow: 0px -5px/*افست*/ 50px/*پخش شدگی*/ rgba(55, 54, 54, 0.5);/*سایه */
+    width: 100%;/*عرض صفحه*/
+    height: 100px;/*ارتفاع*/
+    display: flex;
+    justify-content: center;/*محتوا از نظر عمودی وسط باشه*/
+    align-items: center;/*محتوا از نظر عمودی وسط باشه */
+    text-align: center;/*متن ها وسط چین شوند*/
+    padding: 20px 0px 20px 0px;/*فاصله داخلی*/
+    white-space: nowrap;
+    overflow: hidden;/*اگر محتوایی از فوتر بیشتر شد پنهان بشه*/
+}
+
+footer a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+footer a:hover{
+    color: rgb(95, 95, 95);
+}

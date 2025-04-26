@@ -1,0 +1,90 @@
+/*هدر */
+div.header{
+    background-color: #200c5b;
+    display: flex;
+    padding: 20px 40px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+div.header a{
+color: white;
+padding-top: 15px;
+font-size: 25px;
+}
+div.header a:hover{
+color: rgb(95, 95, 95);
+cursor: pointer;/*وقتی موس میاد روش نشانگر شکل دست میشه*/
+}
+
+header{
+background-color:#140837 ;
+box-shadow: 50px 50px 50px rgba(255, 255, 255, 0.679);
+bottom: 0;
+}
+a{
+text-decoration: none;
+}
+
+
+/* بدنه */
+body{
+    direction: rtl;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+body img{
+    width: 60%;
+    height: 300px;
+    display: block;
+    margin: auto;
+    size: 900px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+table{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px black;
+    padding: 20px 20px 20px 20px;
+}
+div.badaneh{
+    font-size: 20px;
+    margin: 20px 30px 20px 30px;
+}
+
+
+/*فوتر */
+
+footer{
+    margin-top: 100px;/*فاصله از عنصر بالایی*/
+    background-color: #200c5b;
+    box-shadow: 0px -5px/*افست*/ 50px/*پخش شدگی*/ rgba(55, 54, 54, 0.5);/*سایه */
+    width: 100vw;/*عرض صفحه*/
+    height: 100px;/*ارتفاع*/
+    position:absolute;/*موقعیت فوتر*/
+    left: 0;/*فاصله از چپ*/
+    display: flex;
+    justify-content: center;/*محتوا از نظر عمودی وسط باشه*/
+    align-items: center;/*محتوا از نظر عمودی وسط باشه */
+    text-align: center;/*متن ها وسط چین شوند*/
+    padding: 20px;/*فاصله داخلی*/
+    white-space: nowrap;
+    overflow: hidden;/*اگر محتوایی از فوتر بیشتر شد پنهان بشه*/
+}
+
+footer a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+footer a:hover{
+    color: rgb(95, 95, 95);
+}
